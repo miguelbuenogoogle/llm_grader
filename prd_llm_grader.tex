@@ -1,0 +1,127 @@
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% Formatting
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\large\bfseries}{\thesection.}{0.5em}{}
+\titleformat{\subsection}{\normalsize\bfseries}{\thesubsection.}{0.5em}{}
+
+% Custom commands
+\newcommand{\prdtitle}[1]{\begin{center}\LARGE\bfseries #1\end{center}}
+\newcommand{\prdauthor}[1]{\begin{center}\normalsize #1\end{center}}
+\newcommand{\prdmeta}[1]{\begin{center}\small\textcolor{gray}{#1}\end{center}}
+
+\begin{document}
+
+% Title Block
+\prdtitle{Product Requirements Document}
+\prdauthor{Author: Your Name}
+\prdmeta{Last Updated: \today}
+
+\vspace{1em}
+
+% -------------------------
+\section{Introduction}
+\textbf{Overview:} Briefly describe the product, problem space, and context.
+
+\textbf{Background:} Why is this product needed? Include relevant context, prior work, or motivation.
+
+\textbf{Scope:}
+\begin{itemize}[leftmargin=*]
+    \item In-scope:
+    \item Out-of-scope:
+\end{itemize}
+
+% -------------------------
+\section{Objectives}
+\textbf{Goals:}
+\begin{itemize}[leftmargin=*]
+    \item Primary objective:
+    \item Secondary objectives:
+\end{itemize}
+
+\textbf{Success Metrics:}
+\begin{itemize}[leftmargin=*]
+    \item Metric 1:
+    \item Metric 2:
+    \item Guardrails:
+\end{itemize}
+
+% -------------------------
+\section{Stakeholders}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Product Owner:}
+    \item \textbf{Engineering:}
+    \item \textbf{Data Science:}
+    \item \textbf{Design:}
+    \item \textbf{Other:}
+\end{itemize}
+
+% -------------------------
+\section{Use Cases}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{User Story:} As a \underline{\hspace{2cm}}, I want to \underline{\hspace{4cm}} so that \underline{\hspace{4cm}}.
+    
+    \textbf{Acceptance Criteria:}
+    \begin{itemize}
+        \item 
+        \item 
+    \end{itemize}
+
+    \item \textbf{User Story:} As a \underline{\hspace{2cm}}, I want to \underline{\hspace{4cm}} so that \underline{\hspace{4cm}}.
+    
+    \textbf{Acceptance Criteria:}
+    \begin{itemize}
+        \item 
+        \item 
+    \end{itemize}
+\end{enumerate}
+
+% -------------------------
+\section{Aspects}
+\subsection{Functional Requirements}
+\begin{itemize}[leftmargin=*]
+    \item 
+    \item 
+\end{itemize}
+
+\subsection{Non-Functional Requirements}
+\begin{itemize}[leftmargin=*]
+    \item Performance:
+    \item Reliability:
+    \item Scalability:
+    \item Privacy / Safety:
+\end{itemize}
+
+\subsection{Data Requirements}
+\begin{itemize}[leftmargin=*]
+    \item Data sources:
+    \item Logging:
+    \item Metrics instrumentation:
+\end{itemize}
+
+% -------------------------
+\section{Open Questions}
+\begin{itemize}[leftmargin=*]
+    \item 
+    \item 
+\end{itemize}
+
+% -------------------------
+\section{Milestones}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Phase 1:} Description --- Date
+    \item \textbf{Phase 2:} Description --- Date
+    \item \textbf{Launch:} Date
+\end{itemize}
+
+\end{document}
