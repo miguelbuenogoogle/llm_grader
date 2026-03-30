@@ -43,25 +43,107 @@ designed to support instructors by reducing grading workload while maintaining
 transparency and alignment with clearly defined evaluation standards.
 
 \textbf{Background:} 
-Free-response assignments are widely used in instructional settings because they assess higher-order skills such as reasoning, synthesis, and written communication. However, they are significantly more time-consuming to evaluate than structured formats. As a result, instructors often face a tradeoff between assigning richer, open-ended work and managing grading workload.
+Free-response assignments are widely used in instructional settings because they
+assess higher-order skills such as reasoning, synthesis, and written communication.
+However, they are significantly more time-consuming to evaluate than structured
+formats. As a result, instructors often face a tradeoff between assigning richer,
+open-ended work and managing grading workload.
 
-This constraint directly impacts students. Because grading is time-intensive, feedback is often delayed by several days, reducing its usefulness for learning and limiting opportunities for iteration and improvement.
+This constraint directly impacts students. Because grading is time-intensive,
+feedback is often delayed by several days, reducing its usefulness for learning and
+limiting opportunities for iteration and improvement.
 
-In practice, grading is also subject to \textbf{intra-rater variability}, where the same instructor may apply criteria inconsistently over time. In addition, grading can be influenced by \textbf{implicit biases}, such as prior expectations about a student’s performance or writing style, which may affect scores beyond the content of the response. These factors can reduce the consistency and perceived fairness of evaluation.
+In practice, grading is also subject to \textbf{intra-rater variability}, where the
+same instructor may apply criteria inconsistently over time. In addition, grading
+can be influenced by \textbf{implicit biases}, such as prior expectations about a
+student’s performance or writing style, which may affect scores beyond the content
+of the response. These factors can reduce the consistency and perceived fairness of
+evaluation.
+
+This creates a need for a system that can scale grading of open-ended responses
+while maintaining consistency, transparency, and alignment with explicitly defined
+evaluation criteria, while reducing bias and improving feedback timeliness for students.
 
 \textbf{Scope:}
-\begin{itemize}[leftmargin=*]
-    \item In-scope:
-    \item Out-of-scope:
-\end{itemize}
+
+\textbf{In-scope}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Rubric creation and management} \\
+    Structured definition of grading criteria, including dimensions, descriptions, and scoring levels
+    
+    \item \textbf{LLM-based grading of free-response text} \\
+    Automated evaluation of student responses with dimension-level scores and rubric-aligned justifications
+    
+    \item \textbf{Batch processing of student submissions} \\
+    Scalable grading workflows supporting assignment- and class-level processing
+    
+    \item \textbf{Instructor monitoring via sampling} \\
+    Review of randomly and selectively sampled graded responses to assess and maintain quality
+    
+    \item \textbf{Quality tracking and basic diagnostics} \\
+    Estimation of grading error rates and identification of low-confidence or inconsistent outputs
+    
+    \item \textbf{Student-facing feedback} \\
+    Delivery of rubric-aligned scores and explanations to support student understanding
+    
+    \item \textbf{Privacy and data protection controls} \\
+    Handling of student data in compliance with applicable regulations (e.g., FERPA), including minimization, restricted access, and anonymization where appropriate
+\end{enumerate}
+
+\textbf{Out-of-scope}
+\begin{enumerate}
+    \item \textbf{Full automation without instructor oversight} \\
+    Fully autonomous grading workflows without any instructor review or monitoring
+
+    \item \textbf{Learning individual instructor grading behavior} \\
+    Calibration to instructor-specific labels or imitation of individual grading patterns
+
+    \item \textbf{Multi-instructor consensus or cross-course standardization} \\
+    Harmonization of grading across instructors, courses, or institutions
+
+    \item \textbf{Advanced LMS integrations (Canvas, etc.)} \\
+    Deep platform integrations beyond basic export and import functionality
+
+    \item \textbf{Non-text or multimodal grading} \\
+    Evaluation of diagrams, code execution, or other non-textual formats in the initial version
+
+    \item \textbf{Use of student data for unrelated model training} \\
+    Use of student submissions for training general-purpose models without explicit consent
+\end{enumerate}
 
 % -------------------------
 \section{Objectives}
 \textbf{Goals:}
-\begin{itemize}[leftmargin=*]
-    \item Primary objective:
-    \item Secondary objectives:
-\end{itemize}
+\begin{enumerate}[leftmargin=*]
+    \item \textbf{Primary objective}
+    \begin{enumerate}
+        \item \textbf{Scalable, rubric-aligned grading of free-response work} \\
+        Consistent application of instructor-defined evaluation criteria across large volumes of student responses
+    \end{enumerate}
+
+    \item \textbf{Secondary objectives}
+    \begin{enumerate}
+        \item \textbf{Reduced instructor grading burden} \\
+        Decreased time spent on manual grading through automated evaluation and targeted review
+
+        \item \textbf{Improved feedback timeliness for students} \\
+        Faster return of meaningful, rubric-based feedback to support learning and iteration
+
+        \item \textbf{Increased consistency and transparency in grading} \\
+        More uniform application of grading criteria with clear justification tied to rubric dimensions
+
+        \item \textbf{Detection and mitigation of potential bias} \\
+        Identification of systematic deviations from rubric-based evaluation that may reflect implicit bias
+
+        \item \textbf{Establishment of a measurable quality control loop} \\
+        Ongoing estimation of grading accuracy through sampling-based monitoring
+
+        \item \textbf{Privacy, security, and regulatory compliance} \\
+        Protection of student PII and adherence to applicable legal and institutional requirements
+    \end{enumerate}
+\end{enumerate}
+
+% -------------------------
 
 \textbf{Success Metrics:}
 \begin{itemize}[leftmargin=*]
